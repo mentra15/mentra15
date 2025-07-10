@@ -491,30 +491,6 @@ Join the growing Mentra tribe — your journey into the AI future starts here. �
     });
   });
 </script>
-<script>
-  // Block right-click
-  document.addEventListener("contextmenu", function (e) {
-    e.preventDefault();
-  });
-
-  // Block F12, Ctrl+Shift+I/J/C/U, Ctrl+S/P
-  document.addEventListener("keydown", function (e) {
-    // F12
-    if (e.keyCode === 123) {
-      e.preventDefault();
-    }
-
-    // Ctrl+Shift+I or Ctrl+Shift+J or Ctrl+Shift+C
-    if (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key.toUpperCase())) {
-      e.preventDefault();
-    }
-
-    // Ctrl+U, Ctrl+S, Ctrl+P
-    if (e.ctrlKey && ['U', 'S', 'P'].includes(e.key.toUpperCase())) {
-      e.preventDefault();
-    }
-  });
-</script>
 <!-- 📝 Floating Form Section Closer to Button -->
 <!-- Include this in your <head> if not already -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
