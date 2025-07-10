@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MENTRA | POWERHOUSE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --red: #ff1e1e;
+      --black: #000000;
+      --white: #ffffff;
+      --gray: #1a1a1a;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: var(--black);
+      color: var(--white);
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+      position: relative;
+      overflow-x: hidden;
+    }
+    #particles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+    header, section, footer {
+      position: relative;
+      z-index: 1;
+    }
+    header {
+      padding: 1.5rem 2rem;
+      background-color: var(--black);
+      border-bottom: 2px solid var(--red);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-family: 'Anton', sans-serif;
+      font-size: 2rem;
+      color: var(--white);
+    }
+    nav a {
+      text-decoration: none;
+      color: var(--red);
+      margin-left: 1.5rem;
+      font-weight: 600;
+    }
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: var(--red);
+      margin-bottom: 1rem;
+      font-family: 'Anton', sans-serif;
+      letter-spacing: 1px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #cccccc;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .category-section {
+      padding: 3rem 2rem;
+    }
+    .category-title {
+      font-size: 2rem;
+      color: var(--red);
+      margin-bottom: 2rem;
+      border-bottom: 2px solid var(--red);
+      padding-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background-color: var(--gray);
+      padding: 2rem;
+      border-radius: 16px;
+      border: 2px solid var(--red);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      color: var(--white);
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px var(--red);
+    }
+    .card h2 {
+      color: var(--red);
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      color: #dddddd;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    .discover-btn {
+      display: inline-block;
+      background-color: var(--red);
+      color: var(--black);
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.2s ease;
+    }
+    .discover-btn:hover {
+      background-color: #ff3b3b;
+    }
+    footer {
+      background-color: #111111;
+      color: #aaaaaa;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      border-top: 1px solid #ff1e1e;
+    }
+  </style>
+</head>
+<body>
+<canvas id="particles"></canvas>
+
+<header>
+  <div class="logo">
+    <div style="font-size: 2rem;">MENTRA ⚡</div>
+    <div style="font-size: 0.75rem; color: #999999; margin-top: 4px;">© 2025 Mentra. All rights reserved.</div>
+  </div>
+  <nav>
+    <a href="THEMENTRA.html">Home</a>
+    <a href="crates.html">Crates</a>
+    <a href="aireal.html">AIREAL</a>
+    <a href="powerhouse.html" style="color: white; font-weight: bold;">POWERHOUSE</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>POWERHOUSE AI TOOLS</h1>
+  <p>Discover a curated vault of rare, high-impact AI tools powering the next era of creation.</p>
+</section>
+
+<section class="category-section">
+  <div class="category-title">Video & Visuals</div>
+  <div class="grid">
+    <div class="card"><h2>Higgsfield</h2><p>AI-generated short videos and avatars from a single photo.</p><a href="higgsfield.html" class="discover-btn">Discover</a></div>
+    <div class="card"><h2>Microsoft Bing Video Creator</h2><p>Premium AI video generator by Microsoft — pro-level outputs.</p><a href="bingvideo.html" class="discover-btn">Discover</a></div>
+    <div class="card"><h2>Dream Machine</h2><p>Hyper-realistic video generation engine from Luma Labs.</p><a href="dreammachine.html" class="discover-btn">Discover</a></div>
+    <div class="card"><h2>Runway Gen-3</h2><p>Hollywood-grade AI video generation. Used by filmmakers.</p><a href="runway.html" class="discover-btn">Discover</a></div>
+    <div class="card"><h2>Pika Labs</h2><p>Bring your stories to life with AI-generated video from text.</p><a href="pika.html" class="discover-btn">Discover</a></div>
+    <div class="card"><h2>Moonvalley AI</h2><p>Rapid concept-to-video generation for creators.</p><a href="moonvalley.html" class="discover-btn">Discover</a></div>
+    <div class="card"><h2>Kling AI</h2><p>Chinese powerhouse for video generation — realistic motion and fidelity.</p><a href="kling.html" class="discover-btn">Discover</a></div>
+  </div>
+</section>
+
+<section class="category-section">
+  <div class="category-title">Image & Design</div>
+  <div class="grid">
+    <div class="card"><h2>Krea.ai</h2><p>Realtime AI image generation and control with guides.</p><a href="krea.html" class="discover-btn">Discover</a></div>
+    <div class="card"><h2>Scenario.gg</h2><p>Create custom AI-generated game assets and sprites.</p><a href="scenario.html" class="discover-btn">Discover</a></div>
+    <div class="card"><h2>W.A.L.L.E</h2><p>AI tool to create 3D-style concept art with simple prompts.</p><a href="walle.html" class="discover-btn">Discover</a></div>
+    <div class="card"><h2>Open ART by OPENAI</h2><p>AI tool to create 3D-style concept art with simple prompts.</p><a href="openart.html" class="discover-btn">Discover</a></div>
+
+  </div>
+</section>
+
+<section class="category-section">
+  <div class="category-title">Writing & Productivity</div>
+  <div class="grid">
+    <div class="card"><h2>Napkin AI</h2><p>Generate stunning presentations instantly from your ideas.</p><a href="napkin.html" class="discover-btn">Discover</a></div>
+    <div class="card"><h2>Google AI Studio</h2><p>AI prototyping and model training from Google — simple yet powerful.</p><a href="googleai.html" class="discover-btn">Discover</a></div>
+    <div class="card"><h2>Bolt AI</h2><p>Superfast AI assistant for writing, summaries, and communication.</p><a href="bolt.html" class="discover-btn">Discover</a></div>
+    <div class="card"><h2>GravityWrite</h2><p>AI writing tool for blogs, ads, SEO content, and more.</p><a href="gravity.html" class="discover-btn">Discover</a></div>
+    <div class="card"><h2>Gemini Deep Research</h2><p>Advanced Google AI for reasoning and complex problem solving.</p><a href="gemini.html" class="discover-btn">Discover</a></div>
+  </div>
+</section>
+
+<section class="category-section">
+  <div class="category-title">Audio & Assistants</div>
+  <div class="grid">
+    <div class="card"><h2>Riffusion</h2><p>Generate music using spectrograms and AI.</p><a href="riffusion.html" class="discover-btn">Discover</a></div>
+    <div class="card"><h2>Pinokio AI</h2><p>Run any AI tool or app with 1 click — no setup needed.</p><a href="pinokio.html" class="discover-btn">Discover</a></div>
+    <div class="card"><h2>Hailuo AI</h2><p>AI narrator and voice assistant for creators and learners.</p><a href="hailuo.html" class="discover-btn">Discover</a></div>
+  </div>
+</section>
+
+<footer>
+  <p><strong>Disclaimer:</strong> This page is purely informational and created for educational and discovery purposes only.</p>
+  <p>We do not claim ownership of any third-party content, branding, or videos embedded on this website.</p>
+  <p>No promotions or paid endorsements are involved — all YouTube tutorials and tool links belong to their respective creators or companies.</p>
+  <p>If you are a content owner and wish to have your content removed, please contact us and we will act promptly. For issues or queries: codecplus15@gmail.com</p>
+</footer>
+
+<!-- Particle script -->
+<script>
+  const canvas = document.getElementById('particles');
+  const ctx = canvas.getContext('2d');
+  let particlesArray = [];
+
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  class Particle {
+    constructor() {
+      this.x = Math.random() * canvas.width;
+      this.y = Math.random() * canvas.height;
+      this.size = Math.random() * 2 + 1;
+      this.speedX = Math.random() * 0.6 - 0.3;
+      this.speedY = Math.random() * 0.6 - 0.3;
+    }
+    update() {
+      this.x += this.speedX;
+      this.y += this.speedY;
+
+      if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+      }
+    }
+    draw() {
+      ctx.fillStyle = 'rgba(255,30,30,0.4)';
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
+
+  function init() {
+    particlesArray = [];
+    for (let i = 0; i < 120; i++) {
+      particlesArray.push(new Particle());
+    }
+  }
+
+  function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particlesArray.forEach(p => {
+      p.update();
+      p.draw();
+    });
+    requestAnimationFrame(animate);
+  }
+
+  init();
+  animate();
+
+  window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    init();
+  });
+</script>
+
+</body>
+</html>

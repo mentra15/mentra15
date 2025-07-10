@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Profile - Mentra</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white p-8">
+  <h1 class="text-3xl text-orange-500 font-bold mb-6">Your Profile</h1>
+  <div id="profileData" class="space-y-6 bg-[#1a1a1a] p-6 rounded-lg max-w-md border border-orange-500">
+    <div class="flex justify-center">
+      <img id="profilePic" class="w-24 h-24 rounded-full object-cover" />
+    </div>
+    <div><strong>Name:</strong> <span id="name"></span></div>
+    <div><strong>Email:</strong> <span id="email"></span></div>
+    <div><strong>Age:</strong> <span id="age"></span></div>
+    <div><strong>Password:</strong> <span id="password"></span></div>
+    <a href="THEMENTRA.html" class="text-orange-400 underline block text-center mt-6">⬅ Back to Home</a>
+  </div>
+
+  <script>
+    const user = JSON.parse(localStorage.getItem('mentraProfile'));
+    if (user) {
+      document.getElementById('profilePic').src = user.profilePic;
+      document.getElementById('name').textContent = user.username;
+      document.getElementById('email').textContent = user.email;
+      document.getElementById('age').textContent = user.age;
+      document.getElementById('password').textContent = user.password;
+    } else {
+      document.body.innerHTML = '<p class=\"text-center text-red-500\">No user profile found. Please log in first.</p>';
+    }
+  </script>
+</body>
+</html>

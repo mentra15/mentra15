@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>100+ Excel Formulas | Mentra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #000;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-color: #000;
+    }
+    header {
+      padding: 1.5rem 2rem;
+      border-bottom: 2px solid #00ff88;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.8rem;
+      color: #00ff88;
+      font-weight: 800;
+    }
+    .return-button {
+      background-color: transparent;
+      border: 1px solid #00ff88;
+      color: #00ff88;
+      padding: 0.4rem 1rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+    .return-button:hover {
+      background-color: #00ff88;
+      color: #000;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+    h1 {
+      color: #00ff88;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .formula-category {
+      margin-top: 2rem;
+    }
+    .formula-category h2 {
+      color: #00ff88;
+      border-bottom: 1px solid #00ff88;
+      padding-bottom: 0.5rem;
+    }
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+    li {
+      margin-bottom: 0.8rem;
+    }
+    code {
+      background-color: #111;
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #0f0;
+      font-weight: 600;
+    }
+    .footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.85rem;
+      padding: 1.5rem;
+      border-top: 1px solid #00ff88;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <header>
+    <div class="logo">MENTRA 📗</div>
+    <a href="msexcel.html" class="return-button">🔙 Back to Excel Course</a>
+  </header>
+  <div class="container">
+    <h1>50+ Excel Formulas Cheat Sheet</h1>
+
+    <div class="formula-category">
+      <h2>📘 Basic Formulas</h2>
+      <ul>
+        <li><code>=SUM(A1:A10)</code> – Add values in a range</li>
+        <li><code>=AVERAGE(B1:B10)</code> – Find the average</li>
+        <li><code>=MIN(C1:C10)</code> – Minimum value</li>
+        <li><code>=MAX(C1:C10)</code> – Maximum value</li>
+        <li><code>=COUNT(D1:D10)</code> – Count numbers</li>
+        <li><code>=COUNTA(D1:D10)</code> – Count non-empty cells</li>
+        <li><code>=ROUND(E1, 2)</code> – Round to 2 decimals</li>
+      </ul>
+    </div>
+
+    <div class="formula-category">
+      <h2>📗 Logical Formulas</h2>
+      <ul>
+        <li><code>=IF(A1>10, "Yes", "No")</code> – Basic IF condition</li>
+        <li><code>=IF(AND(A1>10,B1<20),"OK","Not OK")</code></li>
+        <li><code>=IF(OR(A1>10,B1<20),"Yes","No")</code></li>
+        <li><code>=NOT(A1=10)</code> – Reverse logic</li>
+      </ul>
+    </div>
+
+    <div class="formula-category">
+      <h2>📙 Text Formulas</h2>
+      <ul>
+        <li><code>=LEFT(A1,4)</code> – Get first 4 characters</li>
+        <li><code>=RIGHT(A1,3)</code> – Get last 3 characters</li>
+        <li><code>=MID(A1,2,5)</code> – Extract substring</li>
+        <li><code>=LEN(A1)</code> – Length of text</li>
+        <li><code>=LOWER(A1)</code> – Convert to lowercase</li>
+        <li><code>=UPPER(A1)</code> – Convert to UPPERCASE</li>
+        <li><code>=PROPER(A1)</code> – Proper Case</li>
+        <li><code>=TRIM(A1)</code> – Remove extra spaces</li>
+        <li><code>=CONCAT(A1,B1)</code> – Join cells</li>
+      </ul>
+    </div>
+
+    <div class="formula-category">
+      <h2>📒 Lookup & Reference</h2>
+      <ul>
+        <li><code>=VLOOKUP(A1, A2:B10, 2, FALSE)</code></li>
+        <li><code>=HLOOKUP(A1, A2:Z2, 2, FALSE)</code></li>
+        <li><code>=INDEX(A1:C3, 2, 2)</code></li>
+        <li><code>=MATCH(50, A1:A10, 0)</code></li>
+        <li><code>=XLOOKUP("Apple", A2:A10, B2:B10)</code></li>
+      </ul>
+    </div>
+
+    <div class="formula-category">
+      <h2>📕 Date & Time</h2>
+      <ul>
+        <li><code>=TODAY()</code> – Current date</li>
+        <li><code>=NOW()</code> – Current date and time</li>
+        <li><code>=DAY(A1)</code> – Extract day</li>
+        <li><code>=MONTH(A1)</code> – Extract month</li>
+        <li><code>=YEAR(A1)</code> – Extract year</li>
+        <li><code>=EDATE(A1,1)</code> – Next month</li>
+        <li><code>=DATEDIF(A1,B1,"d")</code> – Days between dates</li>
+      </ul>
+    </div>
+
+    <div class="formula-category">
+      <h2>🧮 Math & Trig</h2>
+      <ul>
+        <li><code>=ABS(A1)</code> – Absolute value</li>
+        <li><code>=MOD(A1,2)</code> – Remainder</li>
+        <li><code>=POWER(A1,2)</code> – A1 squared</li>
+        <li><code>=SQRT(A1)</code> – Square root</li>
+        <li><code>=INT(A1)</code> – Integer part</li>
+        <li><code>=RAND()</code> – Random number 0–1</li>
+        <li><code>=RANDBETWEEN(1,100)</code></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    This cheat sheet is for educational use. All formulas are standard Excel functions available in most versions.
+  </div>
+
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 60, "density": { "enable": true, "value_area": 800 } },
+        "color": { "value": "#00ff88" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.4, "random": true },
+        "size": { "value": 4, "random": true },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#00ff88",
+          "opacity": 0.3,
+          "width": 1
+        },
+        "move": { "enable": true, "speed": 2 }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": { "enable": true, "mode": "grab" }
+        },
+        "modes": {
+          "grab": { "distance": 140, "line_linked": { "opacity": 0.5 } }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+</body>
+</html>

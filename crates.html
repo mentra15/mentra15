@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mentra Crates</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #000;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+      margin: 0;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    canvas#particles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    h1 {
+      color: #ff6a00;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      z-index: 1;
+      position: relative;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .feature-card {
+      background-color: #111;
+      padding: 2rem;
+      border-radius: 12px;
+      border: 1px solid #333;
+      transition: 0.3s;
+    }
+
+    .feature-card:hover {
+      border-color: #ff6a00;
+      box-shadow: 0 0 10px #ff6a00aa;
+    }
+
+    a {
+      text-decoration: none;
+      color: #ff6a00;
+      font-weight: bold;
+      display: block;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background particles -->
+  <canvas id="particles"></canvas>
+
+  <h1>Explore Mentra Crates</h1>
+
+  <div class="feature-grid">
+    <div class="feature-card">
+      <h2>🎓 Student Crate</h2>
+      <p>AI tools for studying, writing, coding & productivity — personalized for students.</p>
+      <a href="studentcrate.html">Go to Student Crate →</a>
+    </div>
+
+    <div class="feature-card">
+      <h2>🚀 Creator Vault</h2>
+      <p>AI for content creators — video, voice, editing, scripts & more, in one vault.</p>
+      <a href="creatorvault.html">Go to Creator Vault →</a>
+    </div>
+
+    <div class="feature-card">
+      <h2>💼 Startup Kit</h2>
+      <p>AI tools for launching startups, writing pitches, and managing workflows.</p>
+      <a href="startupkit.html">Explore Startup Kit →</a>
+    </div>
+
+    <div class="feature-card">
+      <h2>🎬 Editors CRATE</h2>
+      <p>AI tools for legal drafting, document automation, and contract reviews.</p>
+      <a href="edit.html">START EDITING→</a>
+    </div>
+
+    <div class="feature-card">
+      <h2>🧪 Research Lab</h2>
+      <p>AI to summarize papers, generate citations, and help in academic research.</p>
+      <a href="research.html">discover→</a>
+    </div>
+
+    <div class="feature-card">
+      <h2>🛒 Business Boost</h2>
+      <p>Tools for market research, email marketing, branding, and business productivity.</p>
+      <a href="business.html">boost business 10x→</a>
+    </div>
+
+    <div class="feature-card">
+      <h2>🧑‍🎨 Design Forge</h2>
+      <p>AI tools for creating logos, graphics, UIs, and design workflows.</p>
+      <a href="#">coming soon</a>
+    </div>
+
+    <div class="feature-card">
+      <h2>📊 Data & Insights Hub</h2>
+      <p>Analyze, visualize, and gain insights from data using smart AI tools.</p>
+      <a href="#">coming soon</a>
+    </div>
+
+    <div class="feature-card">
+      <h2>🌐 Web & SEO Tools</h2>
+      <p>Boost your site performance, optimize content, and track SEO with AI.</p>
+      <a href="webseo.html">open up→</a>
+    </div>
+
+    <div class="feature-card">
+      <h2>📚 Learning Accelerator</h2>
+      <p>Personalized AI learning paths, skill upskilling, and online course assistants.</p>
+      <a href="learningaccelerator.html">explore →</a>
+    </div>
+  </div>
+
+  <!-- Particle background script -->
+  <script>
+    const canvas = document.getElementById("particles");
+    const ctx = canvas.getContext("2d");
+
+    let particles = [];
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    class Particle {
+      constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 2 + 1;
+        this.speedX = Math.random() * 0.4 - 0.2;
+        this.speedY = Math.random() * 0.4 - 0.2;
+      }
+
+      update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+
+        if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+        }
+      }
+
+      draw() {
+        ctx.fillStyle = "rgba(255, 106, 0, 0.4)";
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+
+    function initParticles() {
+      particles = [];
+      for (let i = 0; i < 100; i++) {
+        particles.push(new Particle());
+      }
+    }
+
+    function animateParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => {
+        p.update();
+        p.draw();
+      });
+      requestAnimationFrame(animateParticles);
+    }
+
+    initParticles();
+    animateParticles();
+
+    window.addEventListener("resize", () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      initParticles();
+    });
+  </script>
+</body>
+</html>

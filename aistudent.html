@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI for Students | Mentra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #000;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-color: #000;
+    }
+    header {
+      background-color: transparent;
+      padding: 1.5rem 2rem;
+      border-bottom: 2px solid #FFD700;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .logo {
+      font-size: 1.8rem;
+      color: #FFD700;
+      font-weight: 800;
+    }
+    .return-button {
+      background-color: transparent;
+      border: 1px solid #FFD700;
+      color: #FFD700;
+      padding: 0.4rem 1rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .return-button:hover {
+      background-color: #FFD700;
+      color: #000;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+    h1 {
+      color: #FFD700;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      color: #FFD700;
+      margin-top: 2rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+      line-height: 1.8;
+    }
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+      margin-top: 1.5rem;
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+    }
+    .credit {
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+      color: #ccc;
+    }
+    .tool-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .tool-card {
+      background: #111;
+      border: 2px solid #FFD700;
+      padding: 1.5rem;
+      border-radius: 12px;
+      position: relative;
+      text-align: center;
+      box-shadow: 0 0 15px #FFD70080;
+    }
+    .tool-card::before {
+      content: '';
+      position: absolute;
+      top: -25px;
+      left: calc(50% - 15px);
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-bottom: 25px solid #FFD700;
+    }
+    .tool-card h3 {
+      margin-top: 1rem;
+      color: #FFD700;
+      font-size: 1.2rem;
+    }
+    .tool-card p {
+      font-size: 0.95rem;
+      color: #ddd;
+    }
+    .tool-card a {
+      color: #FFD700;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+    .more-tools {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .more-tools a {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background-color: #FFD700;
+      color: #000;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .more-tools a:hover {
+      background-color: #e6c200;
+    }
+    .footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.85rem;
+      padding: 1.5rem;
+      border-top: 1px solid #FFD700;
+      color: #888;
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <header>
+    <div class="logo">MENTRA 🟡</div>
+    <a href="courses.html" class="return-button">🔙 Return to Courses</a>
+  </header>
+  <div class="container">
+    <h1>AI for Students</h1>
+    <p>This course is designed to help students harness AI tools to supercharge learning, save time, and improve productivity. From summarizing lectures and videos to generating presentations and notes, discover how to work smarter with AI.</p>
+    <h2>🎥 Featured Tutorial</h2>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/jdYw7m4pS1o?si=-xza2I4-_SQ-R016" title="AI for Students - Be Productive" allowfullscreen></iframe>
+    </div>
+    <div class="credit"><strong>CREDIT:</strong> <span style="font-weight: 800;">BE PRODUCTIVE</span></div>
+
+    <h2>🛠️ Top AI Tools for Students</h2>
+    <div class="tool-grid">
+      <div class="tool-card">
+        <h3><a href="https://www.summarizebot.com/" target="_blank">SummarizeBot</a></h3>
+        <p>Convert long articles or lectures into short summaries in seconds.</p>
+      </div>
+      <div class="tool-card">
+        <h3><a href="https://yt2pdf.com/" target="_blank">YT2PDF</a></h3>
+        <p>Turn YouTube videos into downloadable PDFs with notes.</p>
+      </div>
+      <div class="tool-card">
+        <h3><a href="https://tome.app/" target="_blank">Tome AI</a></h3>
+        <p>Create stunning presentations automatically from your text input.</p>
+      </div>
+      <div class="tool-card">
+        <h3><a href="https://www.snipd.com/" target="_blank">Snipd</a></h3>
+        <p>AI podcast player that generates key takeaways and transcripts.</p>
+      </div>
+      <div class="tool-card">
+        <h3><a href="https://www.notion.so/product/ai" target="_blank">Notion AI</a></h3>
+        <p>Write, summarize, and organize study notes inside Notion.</p>
+      </div>
+      <div class="tool-card">
+        <h3><a href="https://quizgecko.com/" target="_blank">Quizgecko</a></h3>
+        <p>Create practice quizzes from study materials using AI.</p>
+      </div>
+      <div class="tool-card">
+        <h3><a href="https://speechify.com/" target="_blank">Speechify</a></h3>
+        <p>Convert any text into natural-sounding audio to listen on the go.</p>
+      </div>
+      <div class="tool-card">
+        <h3><a href="https://jenni.ai/" target="_blank">Jenni.ai</a></h3>
+        <p>AI-powered writing assistant for essays and assignments.</p>
+      </div>
+      <div class="tool-card">
+        <h3><a href="https://chat.openai.com/" target="_blank">ChatGPT</a></h3>
+        <p>Ask questions, get explanations, and brainstorm ideas.</p>
+      </div>
+      <div class="tool-card">
+        <h3><a href="https://mindgrasp.ai/" target="_blank">Mindgrasp</a></h3>
+        <p>Upload any file or video and get auto-notes, summaries, and Q&A.</p>
+      </div>
+    </div>
+
+    <div class="more-tools">
+      <a href="student-crate.html">📚 More Tools for Students →</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    This page is for educational purposes only. All tools and videos are credited to their original creators.
+  </div>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 60,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#FFD700"
+        },
+        "shape": {
+          "type": "circle"
+        },
+        "opacity": {
+          "value": 0.4,
+          "random": true
+        },
+        "size": {
+          "value": 4,
+          "random": true
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#FFD700",
+          "opacity": 0.3,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 2
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "grab"
+          }
+        },
+        "modes": {
+          "grab": {
+            "distance": 140,
+            "line_linked": {
+              "opacity": 0.5
+            }
+          }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+</body>
+</html>

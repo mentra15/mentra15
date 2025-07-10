@@ -1,0 +1,240 @@
+<!-- Save this as index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MENTRA - AI Mentor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black: #000000;
+      --orange: #ff6a00;
+      --white: #ffffff;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Anton', sans-serif;
+      background-color: var(--black);
+      color: var(--white);
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      background-color: var(--black);
+      border-bottom: 1px solid var(--orange);
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      height: 48px;
+      margin-right: 10px;
+    }
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: var(--orange);
+      font-weight: 500;
+    }
+    .btn-primary {
+      background-color: var(--orange);
+      color: var(--black);
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 6rem 2rem;
+      background: linear-gradient(to right, #000000, #1a0e0e);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--white);
+    }
+    .hero p {
+      font-size: 1.25rem;
+      color: #dddddd;
+      margin-bottom: 2rem;
+    }
+    .email-link {
+      font-size: 1.2rem;
+      color: var(--orange);
+      font-weight: 600;
+    }
+    .hero-image {
+      margin-top: 2rem;
+      max-width: 100%;
+    }
+    .hero-image img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 20px;
+    }
+    @media screen and (min-width: 768px) {
+      .hero {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+      }
+      .hero-content {
+        max-width: 50%;
+      }
+      .hero-image {
+        max-width: 45%;
+      }
+    }
+    .tools-section {
+      padding: 4rem 2rem;
+      background-color: #111111;
+      text-align: center;
+    }
+    .tools-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: var(--orange);
+    }
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .tool-card {
+      background-color: #222222;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 16px rgba(255, 106, 0, 0.1);
+    }
+    .tool-card h3 {
+      margin-bottom: 0.5rem;
+      color: var(--orange);
+      font-family: 'Montserrat', sans-serif;
+    }
+    .tool-card ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .tool-card ul li {
+      margin: 0.5rem 0;
+      display: flex;
+      align-items: center;
+    }
+    .tool-card ul li img {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+    .tool-card ul li a {
+      color: #cccccc;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+    .tool-card ul li a:hover {
+      text-decoration: underline;
+      color: var(--orange);
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo">
+    <img src="https://i.ibb.co/cSN12qmd/Chat-GPT-Image-Jul-7-2025-12-23-28-PM.png" alt="MENTRA Logo">
+    <h2 style="color: var(--white);">MENTRA</h2>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+    <button class="btn-primary">Log In</button>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Build Smart, Think AI</h1>
+    <p>Empowering the next generation with AI-driven tools for coding, visuals, and communication.</p>
+    <p class="email-link">Get Started: <a href="mailto:codecplus15@gmail.com" style="color: var(--orange); text-decoration: none;">codecplus15@gmail.com</a></p>
+  </div>
+  <div class="hero-image">
+    <img src="https://i.ibb.co/cSN12qmd/Chat-GPT-Image-Jul-7-2025-12-23-28-PM.png" alt="Mentra Design Image">
+  </div>
+</section>
+
+<section class="tools-section">
+  <h2>SkillCrate: Top AI Tools by Domain</h2>
+  <div class="tools-grid">
+    <!-- Productivity & Assistant Tools -->
+    <div class="tool-card">
+      <h3>🧠 Productivity & Assistant</h3>
+      <ul>
+        <li><a href="https://chat.openai.com" target="_blank">ChatGPT</a></li>
+        <li><a href="https://gemini.google.com" target="_blank">Gemini</a></li>
+        <li><a href="https://claude.ai" target="_blank">Claude</a></li>
+        <li><a href="https://gamma.app" target="_blank">Gamma</a></li>
+        <li><a href="https://perplexity.ai" target="_blank">Perplexity</a></li>
+        <li><a href="https://writesonic.com" target="_blank">Writesonic</a></li>
+        <li><a href="https://jasper.ai" target="_blank">Jasper</a></li>
+        <li><a href="https://copy.ai" target="_blank">Copy.ai</a></li>
+        <li><a href="https://tome.app" target="_blank">Tome</a></li>
+        <li><a href="https://wordtune.com" target="_blank">Wordtune</a></li>
+      </ul>
+    </div>
+
+    <!-- Media & Creativity Tools -->
+    <div class="tool-card">
+      <h3>🎨 Media & Creativity</h3>
+      <ul>
+        <li><a href="https://leonardo.ai" target="_blank">Leonardo AI</a></li>
+        <li><a href="https://openai.com/sora" target="_blank">Sora by OpenAI</a></li>
+        <li><a href="https://suno.ai" target="_blank">Suno AI</a></li>
+        <li><a href="https://elevenlabs.io" target="_blank">ElevenLabs</a></li>
+        <li><a href="https://runwayml.com" target="_blank">Runway</a></li>
+        <li><a href="https://pika.art" target="_blank">Pika</a></li>
+        <li><a href="https://ideogram.ai" target="_blank">Ideogram</a></li>
+        <li><a href="https://kaiber.ai" target="_blank">Kaiber</a></li>
+        <li><a href="https://canva.com" target="_blank">Canva AI</a></li>
+        <li><a href="https://beautiful.ai" target="_blank">Beautiful.ai</a></li>
+      </ul>
+    </div>
+
+    <!-- Developer & Builder Tools -->
+    <div class="tool-card">
+      <h3>💻 Developer & Builder</h3>
+      <ul>
+        <li><a href="https://github.com/features/copilot" target="_blank">GitHub Copilot</a></li>
+        <li><a href="https://replit.com" target="_blank">Replit Ghostwriter</a></li>
+        <li><a href="https://builder.ai" target="_blank">Builder.ai</a></li>
+        <li><a href="https://vercel.com/ai" target="_blank">Vercel AI SDK</a></li>
+        <li><a href="https://autogenstudio.com" target="_blank">Autogen Studio</a></li>
+        <li><a href="https://agentgpt.reworkd.ai" target="_blank">AgentGPT</a></li>
+        <li><a href="https://dust.tt" target="_blank">Dust.tt</a></li>
+        <li><a href="https://flowiseai.com" target="_blank">Flowise AI</a></li>
+        <li><a href="https://cognosys.ai" target="_blank">Cognosys.ai</a></li>
+        <li><a href="https://botpress.com" target="_blank">Botpress</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

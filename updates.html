@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentra v1 - Updates & Bug Report</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(-45deg, #0a0a0a, #111827, #1f2937, #0a0a0a);
+      background-size: 400% 400%;
+      animation: gradientMove 15s ease infinite;
+      color: #f0f0f0;
+    }
+
+    @keyframes gradientMove {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .glow-blue {
+      box-shadow: 0 0 15px #00bfff;
+      border: 1px solid #00bfff;
+    }
+  </style>
+</head>
+<body class="min-h-screen p-8 space-y-10">
+
+  <!-- 🛠️ MENTRA MAIN UPDATE BOX -->
+  <div class="max-w-4xl mx-auto bg-[#111] border border-orange-500 p-8 rounded-xl shadow-lg">
+    <h1 class="text-3xl text-orange-500 font-semibold mb-6">🔧 Mentra v1 - Bug Report & Updates</h1>
+
+    <section class="mb-8">
+      <h2 class="text-2xl text-white font-semibold mb-2">Known Issues in Mentra v1</h2>
+      <ul class="list-disc list-inside space-y-2 text-gray-300">
+        <li><strong>Search Bar:</strong> Currently non-functional. No live results or suggestions shown when users type.</li>
+        <li><strong>Login System:</strong> 
+          <ul class="list-disc ml-5 mt-1">
+            <li>Image input only accepted as URL instead of file previously.</li>
+            <li>Users unable to update their email/profile once stored in localStorage.</li>
+            <li>Login button sometimes doesn’t trigger the dialog due to event conflict.</li>
+          </ul>
+        </li>
+        <li><strong>Profile Rendering:</strong> On reload, if localStorage is corrupted or missing fields, no fallback is handled.</li>
+        <li><strong>UI Consistency:</strong> Minor alignment issues on small screens. Some font sizes not responsive.</li>
+      </ul>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl text-white font-semibold mb-2">Planned Updates & Fixes</h2>
+      <ul class="list-disc list-inside space-y-2 text-gray-300">
+        <li>Integrate <strong>live search suggestions</strong> powered by JSON list of AI tools.</li>
+        <li>Polish the login dialog:
+          <ul class="list-disc ml-5 mt-1">
+            <li>Only accept Gmail format via validation.</li>
+            <li>Support <strong>file upload</strong> for profile pictures with base64 storage in localStorage.</li>
+            <li>Enable update of email & image after login via profile edit.</li>
+          </ul>
+        </li>
+        <li>Refactor profile panel UI to show dropdown with logout/edit options.</li>
+        <li>Improve mobile responsiveness for all hero sections and cards.</li>
+        <li>Make login state persistent across pages using localStorage checking.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-2xl text-white font-semibold mb-2">Version Status</h2>
+      <p class="text-gray-300">You are viewing: <span class="text-orange-400 font-semibold">Mentra v1 (Initial Beta)</span></p>
+      <p class="text-gray-400 text-sm mt-2">Last updated: July 8, 2025</p>
+    </section>
+  </div>
+
+  <!-- 🚀 AIREAL SECTION - SEPARATE BOX WITH BLUE GLOW -->
+  <div class="max-w-4xl mx-auto bg-[#0d0d0d] p-8 rounded-xl glow-blue">
+    <h2 class="text-3xl text-blue-400 font-bold mb-4">🌐 AIREAL - The First AI Creator Community</h2>
+    <img src="https://i.ibb.co/XrBZmCx6/Whats-App-Image-2025-07-08-at-9-44-51-PM.jpg" alt="AIREAL Preview" class="rounded-xl w-full mb-4 border border-gray-700">
+
+    <p class="text-gray-300 leading-relaxed">
+      <strong>AIREAL</strong> is the world’s <span class="text-blue-400 font-semibold">first-ever community platform</span> dedicated entirely to AI creators — an innovative space where artificial intelligence meets human creativity.
+      It’s more than just a tool showcase; AIREAL is a digital universe that thrives on the collective energy, imagination, and collaboration of creators who use AI to build, design, express, and inspire.
+    </p>
+
+    <p class="text-gray-300 mt-4 leading-relaxed">
+      Built on the idea that the future of content, design, art, and even business will be powered by AI, AIREAL serves as a living, breathing ecosystem for:
+      <ul class="list-disc list-inside mt-2 text-blue-200">
+        <li>Sharing AI-generated projects (images, videos, music, apps, designs, etc.)</li>
+        <li>Discovering rare and powerful AI tools through Mentra's smart engine</li>
+        <li>Connecting with other AI creators, thinkers, and innovators</li>
+        <li>Staying updated with the latest trends in generative AI</li>
+        <li>Building a creator identity with personalized profiles and project feeds</li>
+      </ul>
+    </p>
+
+    <p class="text-gray-300 mt-5 leading-relaxed">
+      Unlike traditional platforms, AIREAL doesn’t limit users to one form of content — it's a multi-modal hub designed for creators across every category:
+      from AI art and animation to startups, video editing, code generation, branding, and storytelling. 
+      Every creator on AIREAL has a voice, a profile, and a stage to showcase their AI-powered visions.
+    </p>
+
+    <p class="text-gray-300 mt-5 leading-relaxed">
+      🔥 <strong>Why is AIREAL unique?</strong><br>
+      Because no other platform in the world has unified:
+      <ul class="list-disc list-inside mt-2 text-blue-200">
+        <li>A live AI project feed (like a Behance/Dribbble for AI)</li>
+        <li>Tool discovery engine via Mentra smart crates</li>
+        <li>Community-powered content with likes, comments & shares</li>
+        <li>Video showcase section via AIREAL TV</li>
+        <li>Profile-based content portfolios & creator badges</li>
+      </ul>
+    </p>
+
+    <p class="text-gray-300 mt-5 leading-relaxed">
+      AIREAL isn’t just a website. It's a movement — a mission to give AI creators their rightful spotlight, community, and power. 
+      In a world flooded with tools, AIREAL brings clarity. In a space crowded with noise, AIREAL amplifies creativity. 
+      And in an age where AI is changing everything — <span class="text-blue-400 font-semibold">AIREAL is the home for those who change with it.</span>
+    </p>
+
+    <p class="text-blue-300 mt-6 italic text-sm">“AIREAL is not about the future. AIREAL is the future.”</p>
+  </div>
+
+</body>
+</html>
